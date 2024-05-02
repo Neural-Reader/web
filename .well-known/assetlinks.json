@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.neuralreader.neural_reader",
+      "sha256_cert_fingerprints": [
+        "19:1A:23:90:87:79:88:79:44:D5:99:46:FD:7A:99:DF:03:DF:1F:02:A0:5B:91:A4:1E:24:E5:17:64:30:BD:B8"
+      ]
+    }
+  }
+]
