@@ -1,293 +1,7 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="description" content="Privacy Policy for Neural Reader." />
-    <title>Neural Reader Privacy Policy</title>
-    <style>
-        :root {
-            --bg: #ffffff;
-            --surface: #f8fafc;
-            --surface-2: #e2e8f0;
-            --text: #111827;
-            --muted: #4b5563;
-            --heading: #0f172a;
-            --link: #0b57d0;
-            --border: #e5e7eb;
-            --focus: #f59e0b;
-            --shadow: 0 1px 2px rgba(16, 24, 40, 0.06), 0 12px 28px rgba(16, 24, 40, 0.08);
-            --radius: 16px;
-            --max-width: 960px;
-            --font-body: "Iowan Old Style", "Palatino Linotype", Palatino, "Georgia", "Times New Roman", serif;
-            --font-display: "Avenir Next", "Avenir", "Gill Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --bg: #020119;
-                --surface: #040F28;
-                --surface-2: #0f172a;
-                --text: #FFFFFF;
-                --muted: #DBDFE9;
-                --heading: #FFFFFF;
-                --link: #6BE4FF;
-                --border: #504F6D;
-                --focus: #F8E647;
-                --shadow: 0 1px 1px rgba(2, 1, 25, 0.6);
-            }
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            color: var(--text);
-            background: radial-gradient(120% 80% at 10% 0%, var(--surface-2) 0%, var(--bg) 70%);
-            font-family: var(--font-body);
-            line-height: 1.65;
-            font-size: 16px;
-        }
-
-        .container {
-            max-width: var(--max-width);
-            margin: 24px auto 72px;
-            padding: 28px 24px 44px;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-        }
-
-        @media (max-width: 640px) {
-            .container {
-                margin: 16px 12px 48px;
-                padding: 24px 18px 36px;
-            }
-        }
-
-        h1,
-        h2,
-        h3 {
-            color: var(--heading);
-            font-family: var(--font-display);
-        }
-
-        h1 {
-            margin: 0 0 8px;
-            font-size: 2rem;
-            line-height: 1.2;
-            letter-spacing: -0.01em;
-        }
-
-        h2 {
-            margin: 32px 0 12px;
-            font-size: 1.35rem;
-            line-height: 1.3;
-            letter-spacing: -0.01em;
-        }
-
-        h3 {
-            margin: 24px 0 10px;
-            font-size: 1.1rem;
-            line-height: 1.35;
-        }
-
-        p {
-            margin: 0 0 12px;
-            color: var(--muted);
-        }
-
-        a {
-            color: var(--link);
-            text-underline-offset: 2px;
-            text-decoration-thickness: 1px;
-        }
-
-        a:hover {
-            text-decoration-thickness: 2px;
-        }
-
-        a:focus-visible {
-            outline: 2px solid var(--focus);
-            outline-offset: 3px;
-            border-radius: 6px;
-        }
-
-        ul {
-            margin: 0 0 12px 1.2rem;
-            padding: 0;
-        }
-
-        li {
-            margin: 6px 0;
-            color: var(--muted);
-        }
-
-        .strong {
-            font-weight: 700;
-            color: var(--text);
-        }
-
-        .underline {
-            text-decoration: underline;
-        }
-
-        .italic {
-            font-style: italic;
-        }
-
-        .page-header {
-            margin-bottom: 12px;
-        }
-
-        .meta {
-            margin: 0 0 12px;
-            color: var(--muted);
-            font-family: var(--font-display);
-        }
-
-        .toc {
-            margin: 16px 0 28px;
-            padding: 16px 18px;
-            background: var(--surface-2);
-            border: 1px solid var(--border);
-            border-radius: 14px;
-        }
-
-        .toc-title {
-            margin: 0 0 10px;
-            font-weight: 700;
-            color: var(--heading);
-            font-family: var(--font-display);
-        }
-
-        .toc ul {
-            margin: 0 0 0 1.2rem;
-        }
-
-        .toc li {
-            margin: 4px 0;
-            break-inside: avoid;
-        }
-
-        @media (min-width: 760px) {
-            .toc ul {
-                columns: 2;
-                column-gap: 28px;
-            }
-        }
-
-        .table-wrap {
-            margin: 16px 0 24px;
-            overflow-x: auto;
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            background: var(--surface);
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 640px;
-            margin: 0;
-        }
-
-        th,
-        td {
-            border-top: 1px solid var(--border);
-            padding: 10px 12px;
-            text-align: left;
-            vertical-align: top;
-        }
-
-        thead th {
-            background: var(--surface-2);
-            border-top: none;
-        }
-
-        address {
-            font-style: normal;
-        }
-
-        .skip-link {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 10px 12px;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 10px;
-            transform: translateY(-220%);
-            transition: transform 160ms ease;
-            color: var(--text);
-            font-family: var(--font-display);
-        }
-
-        .skip-link:focus {
-            transform: translateY(0);
-        }
-
-        footer {
-            margin-top: 36px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border);
-            color: var(--muted);
-            font-family: var(--font-display);
-        }
-
-        @media print {
-            body {
-                background: #ffffff;
-                color: #000000;
-            }
-
-            .container {
-                margin: 0;
-                padding: 0;
-                border: none;
-                box-shadow: none;
-            }
-
-            p,
-            li {
-                color: #000000;
-            }
-
-            a {
-                color: #000000;
-                text-decoration: underline;
-            }
-
-            .toc,
-            .skip-link {
-                display: none;
-            }
-
-            .table-wrap {
-                overflow: visible;
-                border: 1px solid #000000;
-            }
-
-            table {
-                min-width: 0;
-            }
-        }
-    </style>
-</head>
-<body>
-<a class="skip-link" href="#content">Skip to content</a>
-<main id="content" class="container" tabindex="-1">
-    <header class="page-header">
+<!DOCTYPE html><html lang="en" data-theme="neural"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Privacy Policy | Neural Reader</title><meta name="description" content="How Neural Reader collects, uses, and shares information, and the choices available to you."><link rel="canonical" href="https://neuralreader.com/privacy_policy.html"><link rel="icon" type="image/png" href="/media/app-icon.png"><link rel="apple-touch-icon" href="/media/app-icon.png"><meta name="theme-color" content="#14172a"><meta property="og:type" content="website"><meta property="og:site_name" content="Neural Reader"><meta property="og:title" content="Privacy Policy | Neural Reader"><meta property="og:description" content="How Neural Reader collects, uses, and shares information, and the choices available to you."><meta property="og:url" content="https://neuralreader.com/privacy_policy.html"><meta property="og:image" content="https://neuralreader.com/media/share.jpg"><meta property="og:image:alt" content="Neural Reader with its library and read-aloud player"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Privacy Policy | Neural Reader"><meta name="twitter:description" content="How Neural Reader collects, uses, and shares information, and the choices available to you."><meta name="twitter:image" content="https://neuralreader.com/media/share.jpg"><meta name="twitter:image:alt" content="Neural Reader with its library and read-aloud player"><link rel="stylesheet" href="/_astro/SiteLayout.Ctjt0YDG.css"><link rel="stylesheet" href="/_astro/LegalLayout.Ckmweksj.css"></head><body><a class="skip-link" href="#main-content">Skip to content</a><header class="site-header"><div class="shell header-content"><a class="brand" href="/"><img src="/media/app-icon-mark.webp" width="35" height="35" alt=""><span>Neural Reader</span></a><nav class="main-nav" aria-label="Main navigation"><a href="/#how-it-works">How it works</a><a href="/natural-text-to-speech-voices/">Voices &amp; languages</a><a href="/#guides">Guides</a><a href="/contact_us/">Support</a></nav><details class="mobile-nav"><summary>Menu</summary><nav aria-label="Main navigation"><a href="/#how-it-works">How it works</a><a href="/natural-text-to-speech-voices/">Voices &amp; languages</a><a href="/#guides">Guides</a><a href="/contact_us/">Support</a></nav></details><a class="header-action" href="/#get-the-app" data-smart-store-link data-ios-store="https://apps.apple.com/us/app/neural-reader-smarter-reading/id1498396654" data-android-store="https://play.google.com/store/apps/details?id=com.neuralreader.neural_reader">Get the app <span aria-hidden="true">↗</span></a></div></header><script type="module">var e={ig:`instagram`,tt:`tiktok`,yt:`youtube`},t={s:`story`,r:`reel`,p:`photo`,v:`video`};function n(e){let{userAgent:t=``,platform:n,maxTouchPoints:r=0,userAgentData:i}=e;if(/Android/i.test(t)||i?.platform===`Android`)return`android`;let a=n===`MacIntel`||i?.platform===`macOS`;return/iPhone|iPad|iPod/i.test(t)||a&&r>1?`ios`:null}function r(n,r,i){let[a,o,...s]=r.toLowerCase().trim().match(/[a-z0-9]+/g)??[],c=Object.hasOwn(e,a)?a:`ig`,l=Object.hasOwn(t,o)?o:`v`,u=s.join(`_`).slice(0,25)||`default`,d=[c,l,u].join(`_`),f=new URL(n.ios);f.pathname=`/app/apple-store/${f.pathname.split(`/`).at(-1)}`,f.search=new URLSearchParams({pt:i,ct:d,mt:`8`}).toString();let p=new URL(n.android),m=new URLSearchParams({utm_source:e[c],utm_medium:`influencer`,utm_campaign:d,utm_term:t[l],utm_content:u});return p.searchParams.set(`referrer`,m.toString()),{ios:f.href,android:p.href}}function i(e,t,i,a){let o={ios:e.dataset.iosStore,android:e.dataset.androidStore},s=new URLSearchParams(a.search).get(`r`),c=e.dataset.campaignProvider,l=!!c&&s!==null,u=l?r(o,s,c):o,d=n(i);if(l)for(let e of t)e.href=u[e.dataset.store];if(d){let t=u[d];e.href=t,l&&a.replace(t)}}var a=document.querySelector(`[data-smart-store-link]`);a&&i(a,document.querySelectorAll(`[data-store]`),navigator,location);for(let e of document.querySelectorAll(`.mobile-nav`))e.querySelector(`nav`)?.addEventListener(`click`,t=>{t.target instanceof Element&&t.target.closest(`a`)&&(e.open=!1)}),e.addEventListener(`keydown`,t=>{t.key===`Escape`&&e.open&&(t.preventDefault(),e.open=!1,e.querySelector(`summary`)?.focus())});</script><main id="main-content"><section class="shell legal-page" data-astro-cid-fmzvkzhr><nav class="legal-links" aria-label="Support and legal" data-astro-cid-fmzvkzhr><a href="/" data-astro-cid-fmzvkzhr>Home</a><a href="/contact_us/" data-astro-cid-fmzvkzhr>Support</a><a href="/privacy_policy.html" data-astro-cid-fmzvkzhr>Privacy</a><a href="/terms_of_use.html" data-astro-cid-fmzvkzhr>Terms</a></nav><article id="content" class="legal-document" data-legal-body tabindex="-1" data-astro-cid-fmzvkzhr><header class="page-header">
         <h1>Privacy Policy</h1>
         <p class="meta"><span class="strong">Effective date:</span> <time datetime="2026-01-03">January 03, 2026</time>.</p>
+        <p class="meta"><span class="strong">Last updated:</span> <time datetime="2026-11-15">November 15, 2026</time>.</p>
         <p>This Privacy Policy describes the privacy practices of Neural Reader in connection with the Neural Reader mobile
             application (the &ldquo;App&rdquo;).</p>
     </header>
@@ -295,8 +9,8 @@
             href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:European_Economic_Area_(EEA)">European
             Economic Area</a> should also read our Notice to European Users <a
             href="#notice-to-european-users">below</a>.</p>
-    <nav class="toc" aria-label="Table of contents">
-        <p class="toc-title">Contents</p>
+    <details class="legal-contents"><summary>Contents</summary><nav class="toc" aria-label="Table of contents">
+        
         <ul>
             <li><a href="#personal-information-we-collect">Personal Information We Collect</a></li>
             <li><a href="#how-we-use-your-personal-information">How We Use Your Personal Information</a></li>
@@ -314,7 +28,7 @@
             <li><a href="#notice-to-european-users">Notice to European Users</a></li>
             <li><a href="#notice-to-california-users">Notice to California Residents</a></li>
         </ul>
-    </nav>
+    </nav></details>
     <h2 id="personal-information-we-collect">Personal Information We Collect</h2>
     <p>When you use the App, we may collect information about you, including:</p>
     <ul>
@@ -346,7 +60,7 @@
             which we may send through a push notification, and responding to your requests, questions and feedback;</li>
         <li>Provide technical support and maintenance for the App; and</li>
         <li>Perform statistical analysis about use of the App (including through analytics and attribution tools such as
-            <a href="https://www.appsflyer.com/legal/privacy-policy/">AppsFlyer</a>).</li>
+            <a href="https://firebase.google.com/support/privacy">Google Analytics for Firebase</a>).</li>
     </ul>
     <p id="compliance-fraud"><span class="strong">For compliance, fraud prevention, and safety.</span> We may use your
         personal information and disclose it to law enforcement, government authorities, and private parties as we
@@ -376,7 +90,7 @@
         (Apple or Google) and our subscription management provider may provide us with purchase and subscription status
         information so we can enable your access.</p>
     <p><span class="strong">Analytics and attribution providers.</span> We may share device and usage information with
-        analytics and attribution providers (such as AppsFlyer) to understand App performance and marketing attribution.</p>
+        analytics and attribution providers (such as Google Analytics for Firebase) to understand App performance and marketing attribution.</p>
     <p><span class="strong">Professional advisors.</span> We may disclose your personal information to professional
         advisors, such as lawyers, bankers, auditors and insurers, where necessary in the course of the professional
         services that they render to us.</p>
@@ -438,7 +152,7 @@
     <p>Neural Reader commits to resolve complaints about our collection or use of your personal information. European individuals with inquiries or complaints regarding our Privacy Policy should first contact Neural Reader at support@neuralreader.com. If you do not receive timely acknowledgment of your complaint from us, or if we have not resolved your complaint to your satisfaction, you may submit a complaint to the data protection authority in your jurisdiction.</p>
     <p>Neural Reader may be required to disclose personal data in response to lawful requests by public authorities, including to meet national security or law enforcement requirements.</p>
     <h2 id="children">Children</h2>
-    <p>The App is not directed at children under the age of 4, and our <a href="terms_of_use.html">Terms of Use</a> do
+    <p>The App is not directed at children under the age of 4, and our <a href="/terms_of_use.html">Terms of Use</a> do
         not allow children under 4 years of age to use the App. If we learn that we have collected personal information
         from a child under 4, we will delete it. We encourage parents with concerns to <a
             href="#how-to-contact-us">contact us</a>.</p>
@@ -465,7 +179,7 @@
         legislation.<br /><br /><span class="strong">Legal bases for processing.</span> We use your personal information
         only as permitted by law. Our legal bases for processing the personal information described in this Privacy
         Policy are described in the table below.</p>
-    <div class="table-wrap">
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Policy table; scroll horizontally to see all columns">
     <table class="table table-bordered notice-eu-users">
         <thead class="thead-light">
             <tr>
@@ -526,13 +240,13 @@
     <p>If you would like to submit a complaint about our use of your personal information or our response to your
         requests regarding your personal information, you may contact us or submit a
         complaint to the data protection regulator in your jurisdiction. You can find your data protection regulator <a
-            href="https://edpb.europa.eu/about-edpb/board/members_en">here</a>.</p>
+            href="https://www.edpb.europa.eu/contact/contact-dpas_en">here</a>.</p>
     <h2 id="notice-to-california-users">Notice to California Residents</h2>
     <p>We are required by the California Consumer Privacy Act of 2018 (&ldquo;CCPA&rdquo;) to provide to California
         residents an explanation of how we collect, use and share their personal information, and of the rights and
         choices we offer California residents regarding our handling of their personal information.</p>
     <p>We do not sell personal information. In addition to disclosures of personal information to our service providers and professional advisors, for compliance, fraud prevention and safety, and in connection with a business transfer, as described in the <a href="#how-we-share-your-personal-info">&ldquo;How We Share Your Personal Information&rdquo;</a> section of the Privacy Policy, the following chart further describes our privacy practices with respect to the personal information of our California consumers.</p>
-    <div class="table-wrap">
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Policy table; scroll horizontally to see all columns">
     <table class="table table-bordered">
         <thead class="thead-light">
             <tr>
@@ -623,8 +337,6 @@
         to submit requests on their behalf. We will require the authorized agent to have written authorization
         confirming such authority.</p>
     <footer>
-        <p>Looking for our Terms of Use? See <a href="terms_of_use.html">Terms of Use</a>.</p>
+        <p>Looking for our Terms of Use? See <a href="/terms_of_use.html">Terms of Use</a>.</p>
     </footer>
-</main>
-</body>
-</html>
+</article></section></main><footer class="footer"><div class="shell footer-content"><a href="/" class="brand"><img src="/media/app-icon-mark.webp" alt="" width="32" height="32"><span>Neural Reader</span></a><nav aria-label="Footer"><a href="/contact_us/">Support</a><a href="/privacy_policy.html">Privacy</a><a href="/terms_of_use.html">Terms</a></nav><p class="footer-credit">Developed by Prompt Functions Inc.</p><small class="footer-credit">Apple, the Apple logo, iPhone, and iPad are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</small></div></footer></body></html>
