@@ -1,0 +1,1 @@
+import{t as e}from"./voice-samples.BGGAl3Rp.js";var t=document.querySelector(`[data-featured-voices]`);t&&e(t);
