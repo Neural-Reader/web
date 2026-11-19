@@ -1,0 +1,1 @@
+import{t as e}from"./voice-samples.CDpfp608.js";var t=document.querySelector(`[data-featured-voices]`);t&&e(t);
